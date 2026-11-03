@@ -55,13 +55,13 @@ export default function Home() {
   return (
     <>
       <Header />
-      <main id="top" className="px-4 pb-10">
-        <section className="mx-auto mt-6 sm:px-6 px-2">
+      <main id="top" className="px-3 pb-10 sm:px-4">
+        <section className="mx-auto mt-4 sm:mt-6 lg:px-6">
           <div className="relative min-h-[34rem] overflow-hidden rounded-[2rem] border border-white/10 bg-navy lg:min-h-[36rem]">
             <HeroSlideshow bleed />
             <div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-navy via-navy/80 to-transparent" />
             <ParticleField />
-            <div className="relative z-10 flex min-h-[34rem] max-w-xl flex-col justify-center px-6 py-12 sm:px-12 lg:min-h-[36rem]">
+            <div className="relative z-10 flex min-h-[34rem] max-w-xl flex-col justify-center px-5 py-12 sm:px-12 lg:min-h-[36rem]">
               <p className="font-display text-sm font-medium text-violet">Science-first technology</p>
               <h1 className="mt-4 max-w-xl font-flex text-4xl font-semibold leading-[1.08] text-white sm:text-6xl">
                 <SplitText text="Turning research into real-world solutions." highlight="real-world" />
@@ -71,12 +71,12 @@ export default function Home() {
               </p>
               <div className="enter-late mt-8">
                 <p className="font-flex text-sm text-cool">I&apos;m looking for</p>
-                <div className="mt-3 flex flex-wrap gap-2">
+                <div className="mt-3 flex flex-col gap-2 sm:flex-row sm:flex-wrap">
                   {finds.map((item) => (
                     <a
                       key={item.href}
                       href={item.href}
-                      className="inline-flex h-11 items-center gap-2 rounded-full bg-violet px-5 font-display text-sm font-medium text-navy"
+                      className="flex h-11 w-full items-center justify-between gap-2 rounded-full bg-violet px-5 font-display text-sm font-medium text-navy sm:w-auto sm:justify-center"
                     >
                       {item.label}
                       <span aria-hidden="true">→</span>
@@ -277,7 +277,7 @@ export default function Home() {
           </div>
         </section>
       </main>
-      <footer className="px-4 pb-8">
+      <footer className="px-3 pb-8 sm:px-4">
         <div className="mx-auto flex max-w-6xl flex-col gap-4 px-2 py-6 sm:flex-row sm:items-center sm:justify-between">
           <Wordmark className="text-lg text-white" />
           <p className="font-flex text-sm text-cool">Siegen · Port Harcourt</p>

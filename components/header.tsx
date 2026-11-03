@@ -44,7 +44,7 @@ export function Header() {
   }
 
   return (
-    <header ref={rootRef} className="sticky top-4 z-40 px-9 mb-4">
+    <header ref={rootRef} className="sticky top-3 z-40 mb-4 px-3 sm:top-4 sm:px-6 lg:px-9">
         <div
         className={`mx-auto border border-white/10 bg-ink px-3 transition-[border-radius] duration-300 ease-out motion-reduce:transition-none ${
           open ? "rounded-3xl" : "rounded-full"
