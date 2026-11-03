@@ -56,7 +56,7 @@ export default function Home() {
     <>
       <Header />
       <main id="top" className="px-4 pb-10">
-        <section className="mx-auto mt-6 px-5">
+        <section className="mx-auto mt-6 sm:px-6 px-2">
           <div className="relative min-h-[34rem] overflow-hidden rounded-[2rem] border border-white/10 bg-navy lg:min-h-[36rem]">
             <HeroSlideshow bleed />
             <div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-navy via-navy/80 to-transparent" />
