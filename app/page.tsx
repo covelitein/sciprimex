@@ -88,6 +88,7 @@ export default function Home() {
           </div>
         </section>
 
+        <div className="px-4">
         <section id="path" className="mx-auto mt-16 max-w-6xl">
           <div className="text-center">
             <p className="font-flex text-sm font-medium text-violet">How it works</p>
@@ -276,9 +277,10 @@ export default function Home() {
             </a>
           </div>
         </section>
+        </div>
       </main>
-      <footer className="px-3 pb-8 sm:px-4">
-        <div className="mx-auto flex max-w-6xl flex-col gap-4 px-2 py-6 sm:flex-row sm:items-center sm:justify-between">
+      <footer className="px-7 pb-8 sm:px-8">
+        <div className="mx-auto flex max-w-6xl flex-col gap-4 py-6 sm:flex-row sm:items-center sm:justify-between">
           <Wordmark className="text-lg text-white" />
           <p className="font-flex text-sm text-cool">Siegen · Port Harcourt</p>
         </div>
